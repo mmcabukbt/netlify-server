@@ -1,7 +1,7 @@
-exports.handler = async (event, callback) => {
+exports.handler = async (event, context) => {
 	const isim = event.queryStringParameters.isim;
 	return {
-		status: 200,
+		statusCode: 200,
 		body: `Selamün aleyküm ${isim || 'Dünya'}`
 	}
 }
